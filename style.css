@@ -1101,16 +1101,16 @@ font-size: 14px;
 #RoomBooking_icon img {
   width: 60px;
   height: 30px;
-  margin-top: 153px; /* moved down ~2x */
+  margin-top: 133px;
   margin-right: 0px;
   margin-left: 75px;
   cursor: pointer;
 }
-@media (max-width: 420px) {
+@media (min-width: 376px) and (max-width: 420px) {
   #RoomBooking_icon img {
     width: 60px;
     height: 50px;
-    margin-top: 151px;
+    margin-top: 131px !important;
     margin-left: 70px;
     margin-right: 4px;
   }
@@ -5617,10 +5617,10 @@ color: #000000;
   }
 }
 
-/* iPad: move Booking button up */
-@media (min-width: 768px) and (max-width: 1024px) {
+/* iPad: move Booking button */
+@media (min-width: 768px) and (max-width: 1023px) {
   #RoomBooking_icon img {
-    margin-top: 161px !important;
+    margin-top: 141px !important;
   }
 }
 
@@ -5711,14 +5711,34 @@ color: #000000;
 /* Mobile-only tweak: move Booking button position for small phones (≤375px) */
 @media (max-width: 375px) {
   #RoomBooking_icon img {
-    margin-top: 161px !important;
+    margin-top: 175px !important;
   }
 }
 
-/* iPad Pro: align room label level with Booking button */
-@media (min-width: 1024px) {
+/* iPhone 14 Pro Max size (421–480px): Booking down */
+@media (min-width: 421px) and (max-width: 480px) {
+  #RoomBooking_icon img {
+    margin-top: 143px !important;
+  }
+}
+
+/* iPad Pro (1024–1366px): Booking position */
+@media (min-width: 1024px) and (max-width: 1366px) {
   .room-selector-wrap {
     margin-bottom: 45px !important;
+  }
+  #RoomBooking_icon img {
+    margin-top: 165px !important;
+  }
+}
+
+/* Desktop (>1366px): Booking position */
+@media (min-width: 1367px) {
+  .room-selector-wrap {
+    margin-bottom: 45px !important;
+  }
+  #RoomBooking_icon img {
+    margin-top: 140px !important;
   }
 }
 
