@@ -1098,22 +1098,16 @@ font-size: 14px;
 }
 
 /* ปรับขนาดเฉพาะไอคอน */
+#RoomBooking_icon {
+  position: absolute;
+  top: 38px;
+  right: -135px;
+  z-index: 100;
+}
 #RoomBooking_icon img {
   width: 60px;
   height: 30px;
-  margin-top: 133px;
-  margin-right: 0px;
-  margin-left: 75px;
   cursor: pointer;
-}
-@media (min-width: 376px) and (max-width: 420px) {
-  #RoomBooking_icon img {
-    width: 60px;
-    height: 50px;
-    margin-top: 131px !important;
-    margin-left: 70px;
-    margin-right: 4px;
-  }
 }
 
 #Calendar_icon,
@@ -4904,10 +4898,9 @@ color: #000000;
 @media screen and (max-width: 375px) {
   html, body { overflow-x: hidden; }
   #RoomBooking_icon {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin-top: 18px;
+    position: absolute;
+    top: 8px;
+    right: 12px;
   }
   #calendarPopup {
     display: none; /* ซ่อนก่อน */
@@ -5617,12 +5610,7 @@ color: #000000;
   }
 }
 
-/* iPad: move Booking button */
-@media (min-width: 768px) and (max-width: 1023px) {
-  #RoomBooking_icon img {
-    margin-top: 141px !important;
-  }
-}
+
 
 /* iPad: reduce Meter h1 (100 A / 3 Phase) to avoid overpowering layout */
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -5708,37 +5696,20 @@ color: #000000;
   }
 }
 
-/* Mobile-only tweak: move Booking button position for small phones (≤375px) */
-@media (max-width: 375px) {
-  #RoomBooking_icon img {
-    margin-top: 175px !important;
-  }
-}
 
-/* iPhone 14 Pro Max size (421–480px): Booking down */
-@media (min-width: 421px) and (max-width: 480px) {
-  #RoomBooking_icon img {
-    margin-top: 143px !important;
-  }
-}
 
-/* iPad Pro (1024–1366px): Booking position */
+/* iPad Pro: room selector spacing */
 @media (min-width: 1024px) and (max-width: 1366px) {
   .room-selector-wrap {
     margin-bottom: 45px !important;
-  }
-  #RoomBooking_icon img {
-    margin-top: 165px !important;
+    margin-top: -20px !important;
   }
 }
 
-/* Desktop (>1366px): Booking position */
+/* Desktop: room selector spacing */
 @media (min-width: 1367px) {
   .room-selector-wrap {
     margin-bottom: 45px !important;
-  }
-  #RoomBooking_icon img {
-    margin-top: 140px !important;
   }
 }
 
